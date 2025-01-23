@@ -1,0 +1,16 @@
+What is Bash
+============
+- Is a command-line interpreter used to interact with the operating system. 
+- It allows you to run commands, scripts and programs
+- Bash is short for Bourne Again Shell
+
+
+Why learn
+=========
+1. Efficiency: You can accomplish tasks faster through the command line than with a GUI.
+
+2. Automation: Bash scripting allows you to automate repetitive tasks.
+
+3. Versatility: You'll use Bash often as a software engineer, especially when working with servers, deployment, or tooling.
+
+
