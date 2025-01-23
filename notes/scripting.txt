@@ -1,0 +1,89 @@
+BASH Scripting
+==============
+
+What is a bash script
+====================
+- is a file containing a series of commands you want to run in sequence
+- Instead of typing commands one by one in the terminal you can put them in a script to save time and automate tasks
+
+
+First Bash script
+=================
+- bash scripts have .sh extension
+- eg. script.sh
+
+Example 1
+=========
+#!/bin/bash
+
+echo "hello world"
+
+Shebang line
+============
+#!/bin/bash 
+- tells system to use bash to execute the script
+
+
+Comments
+========
+use #
+
+
+variables
+=========
+variable_name = value
+
+eg
+    name = 'vincent'
+
+    Accesing variables
+    ==================
+    use $
+    eg
+        name='vincent'
+        echo "My name is $name"
+
+
+USER INPUT
+==========
+- use read command
+
+eg
+    # Get user name and store it in a variable_name
+    read user_name
+
+
+
+CONDOTIONAL STATEMENTS
+======================
+if, elif and else
+use fi to close the if statement block
+
+    SYNTAX
+    ======
+    if [ condition ]; then
+        # commands if condition is true
+
+    elif [ another condition]; then
+        # commands
+
+    else
+        # commands
+
+    fi
+
+- use [[]] to do comparisons in conditions
+    if [[ a < b ]]
+
+
+COMPARISON OPERATORS IN BASH
+============================
+-eq = equal to
+-ne = not equal to
+-gt = greator than
+-lt = Less than
+-ge = greator than or equal to
+-le = Less than or equal to
+
+LOOP
+====
