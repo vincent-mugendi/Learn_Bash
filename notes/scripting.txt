@@ -158,4 +158,47 @@ FUNCTIONS
         # Calling the fucntion with an arguments
         greet "Vincent"
 
+
+    RETRUNING VALUES
+    ================
+    - fucntions in bash return a status code
+        - 0 - sucess
+        - non-zero - failure
+
+    LOCAL VARIABLES IN BASH FUNCTIONS
+    =================================
+    - use local keyword if you want a varible to be only accesible within the function
+
+    Example
+    -------
+    #!/bin/bash
+
+    # function definition
+    my_function() {
+        local name="Vincent"
+    }
+
+
+    RECURSIVE FUNCTIONS
+    ===================
+    - Recursion is a function calling itself
+
+    Example:
+    --------
+        #!/bin/bash
         
+        # Define the function
+        countdown() {
+            local num=$1
+            if [[ $num -gt 0 ]]; then
+                echo "$num"
+                countdown $((num - 1))
+            else
+                echo "Blast off!"
+            fi
+        }
+        
+        # Call the function
+        countdown 5
+
+
