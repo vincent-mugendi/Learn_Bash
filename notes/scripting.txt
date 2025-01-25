@@ -87,3 +87,27 @@ COMPARISON OPERATORS IN BASH
 
 LOOP
 ====
+- loop lets you to repeat a set of commands as long as a certain condition is true
+
+    FOR LOOP
+    ========
+    - for loop runs a block of commands for each item in a list
+
+    Example
+    -------
+    for variable in list; do
+        # Commands to execute
+    done
+
+
+    WHILE LOOP
+    ==========
+    - while loop keeps running as long a certain condition is true
+
+    SYNTAX
+    ======
+    while [ condition ]; do
+        # commands to execute
+    done
+
+    
