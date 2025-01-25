@@ -110,4 +110,52 @@ LOOP
         # commands to execute
     done
 
-    
+
+
+FUNCTIONS
+=========
+- allows you to execute a block of commands together
+
+    SYNTAX
+    ======
+    function_name() {
+        # commands to execute
+    }
+
+    or
+
+    function function_name {
+        # commands to execute
+    }
+
+
+    Example
+    =======
+    #!/bin/bash
+
+    # Defining the function
+    greet() {
+        echo "Hello world!"
+    }
+
+    # Calling the function
+    greet
+
+
+    PASSING ARGUMENTS
+    =================
+    - acess arguments using $1, $2, $3, etc
+
+    Example
+    =======
+        #!/bin/bash
+
+        #Define the function
+        greet() {
+            echo "Hello, $1"
+        }
+
+        # Calling the fucntion with an arguments
+        greet "Vincent"
+
+        
